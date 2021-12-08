@@ -1,0 +1,299 @@
+$blueBoxColor: #1996c3;
+$greenBoxColor: #84bf42;
+$lightBlueBoxColor: #eff9fd;
+$orangeBoxColor: #d84e30;
+$darkbluetext: #003c7d;
+
+@font-face {
+    font-family: "IdealSansBookItalicPro";
+    src: url(/fonts/IdealSans-BookItalic-Pro.otf);
+}
+
+@font-face {
+    font-family: "IdealSansLightItalicPro";
+    src: url(/fonts/IdealSans-LightItalic-Pro.otf);
+}
+
+@font-face {
+    font-family: "IdealSansThinPro";
+    src: url(/fonts/IdealSans-Thin-Pro.otf);
+}
+
+@font-face {
+    font-family: "IdealSansMediumPro";
+    src: url(/fonts/IdealSans-Medium-Pro.otf);
+}
+
+@font-face {
+    font-family: "IdealSansLightPro";
+    src: url(/fonts/IdealSans-Light-Pro.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    padding: 80px 0px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: auto;
+    }
+}
+  
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.picBox {
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        min-width: 310px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: white;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        min-width: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 0px;
+    }
+}
+  
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+}
+  
+.section3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-end; 
+    }
+}
+
+.section4 {
+    display: flex;  
+    width: auto;
+    align-items: flex-end;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        min-width: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 0px;
+    }
+}
+  
+.blueBox {
+    width: 0%;
+    height: auto;
+    background: $blueBoxColor;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        height: 358px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 514px;
+    }
+}
+
+.greenBox {
+    width: 100%;
+    height: auto;
+    background: $greenBoxColor;
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        width: 310px;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 445px;
+    }
+}
+  
+.greenTitle {
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "IdealSansBookItalicPro";
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+.greenDescription {
+    font-size: 18px;
+    font-family: "IdealSansLightItalicPro";
+    line-height: 1.6;
+    padding-left: 5%;
+    padding-right: 45px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        padding-left: 55px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.email {
+    font-size: 18px;
+    padding-left: 5%;
+    padding-bottom: 45px;
+    font-family: "IdealSansThinPro";
+
+    @media screen and (min-width: 768px) {
+        padding-left: 60px;
+    }
+}
+
+.lightblueBox {
+    width: 100%;
+    height: auto;
+    background: $lightBlueBoxColor;
+
+    @media screen and (min-width: 768px) {
+        width: 378px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 760px;
+    }
+}
+
+.lightblueTitle {
+    font-family: "IdealSansMediumPro";
+    font-size: 36px;
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+       font-size: 32px;
+       padding-left: 15%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 50px;
+        padding-bottom: 30px;
+        padding-top: 80px;
+        padding-left: 110px;
+    }
+}
+
+.lightblueSubTitle {
+    font-size: 20px;
+    font-family: "IdealSansLightItalicPro";
+    color: $darkbluetext;
+    line-height: 1.6;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 22px;
+        padding-bottom: 30px;
+        padding-left: 110px;
+        padding-right:90px;
+    }
+}
+
+.lightblueDescription {
+    font-size: 18px;
+    font-family: "IdealSansLightPro";
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 45px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 110px;
+        padding-right: 115px;
+        padding-bottom: 80px;
+    }
+}
+
+.orangeBox {
+    width: 100px;
+    background: $orangeBoxColor;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 100%;
+        height: 542px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 450px;
+    }
+}
+
